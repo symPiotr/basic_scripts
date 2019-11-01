@@ -3,8 +3,9 @@
 import sys
 
 if len(sys.argv) != 2:
-	sys.exit('This script reverse-complements all sequences within a multifasta file.\n'
-	         'Usage: ./fasta_to_single_line.py <fasta_file> \n')
+	sys.exit('This script rewrites all sequences within a multifasta file, potentially spread across multiple lines,\n'
+	         'without any EOL characters --- so that they appear written in a single line.\n'
+		 'Usage: ./fasta_to_single_line.py <fasta_file> \n')
 Script, Fasta = sys.argv
 
 FASTA = open(Fasta, 'r')
